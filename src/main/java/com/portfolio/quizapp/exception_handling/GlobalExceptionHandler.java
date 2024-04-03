@@ -1,4 +1,4 @@
-package com.portfolio.quizapp;
+package com.portfolio.quizapp.exception_handling;
 
 import java.util.NoSuchElementException;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
-import com.portfolio.quizapp.exceptions.ContentNotFoundException;
-import com.portfolio.quizapp.exceptions.UserNotFoundException;
+import com.portfolio.quizapp.exception_handling.exceptions.ContentNotFoundException;
+import com.portfolio.quizapp.exception_handling.exceptions.UserNotFoundException;
 
 import lombok.extern.slf4j.Slf4j;
 

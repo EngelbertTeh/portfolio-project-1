@@ -1,4 +1,4 @@
-package com.portfolio.quizapp;
+package com.portfolio.quizapp.exception_handling; 
 
 import lombok.Data;
 

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.portfolio.quizapp.dao.QuestionDAO;
-import com.portfolio.quizapp.exceptions.ContentNotFoundException;
+import com.portfolio.quizapp.exception_handling.exceptions.ContentNotFoundException;
 
 @Service
 public class QuestionService {

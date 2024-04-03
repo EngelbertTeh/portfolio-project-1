@@ -1,4 +1,4 @@
-package com.portfolio.quizapp.exceptions;
+package com.portfolio.quizapp.exception_handling.exceptions;
 
 public class ContentNotFoundException extends RuntimeException {
   public ContentNotFoundException() {
