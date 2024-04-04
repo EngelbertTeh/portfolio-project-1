@@ -3,6 +3,14 @@ run-name: ${{ github.actor }} is deploying to AWS ECS
 on:
   push:
     branches: [main]
+
+env:
+  AWS_REGION: ap-southeast-1
+  # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: hair-salons-container
+  # set this to your Amazon ECR repository name
+
+
 jobs:
   build-and-deply:
     runs-on: [ubuntu-latest]
@@ -28,7 +36,7 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
-        
+
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
