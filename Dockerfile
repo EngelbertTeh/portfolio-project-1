@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
-COPY target/quizapp-0.0.1-SNAPSHOT.jar.original app.jar
+COPY target/quizapp-3.2.3.jar quizapp-3.2.3.jar
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "quizapp-3.2.3.jar"]
