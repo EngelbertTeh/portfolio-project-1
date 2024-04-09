@@ -11,7 +11,7 @@ env:
   # set this to your Amazon ECR repository name
   ECS_TASK_DEFINITION: hair-salons-task-definition.json
   CONTAINER_NAME: hair-salons-container
-  ECS_SERVICE: hair-salons-service
+  ECS_SERVICE: hair-salons-service-compose
   ECS_CLUSTER: DevCluster1
 
 jobs:
